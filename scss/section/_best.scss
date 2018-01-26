@@ -1,0 +1,87 @@
+.best {
+    background-image: url('../img/bg/best_bg.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.best__container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    outline: 0 solid green;
+
+    // height: 100%;
+    // padding-top: 136px;
+}
+
+.title-h2--best {
+    margin-bottom: 56px;
+}
+
+.best__item-pik {
+    width: 105px;
+    height: 90px;
+    outline: 0 solid green;
+
+    &.best__item--meat {
+        fill: $orange;
+    }
+
+    &.best__item--hand {
+        fill: $yellow;
+    }
+
+    &.best__item--natural {
+        fill: $green;
+    }
+}
+
+.best__list {
+    display: flex;
+    flex-wrap: nowrap;
+    // flex: 1;
+    // flex-direction: row;
+}
+
+.best__item {
+    outline: 0 solid blue;
+    // flex-basis: 1 300px;
+    padding: 0 5px;
+    // display: flex;
+    // flex-basis: 50%;
+    // flex-direction: column;
+    // align-items: center;
+    margin-right: 20px;
+    // justify-content: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.best__item-svg {
+    margin-bottom: 36px;
+}
+
+.best__item-title {
+    margin-bottom: 30px;
+
+    font-family: "Lifehack", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #2f3234;
+}
+
+.best__desc {
+    // text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: #2f3234;
+    opacity: 0.8;
+}
