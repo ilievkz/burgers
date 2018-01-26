@@ -194,7 +194,8 @@ h2, h6 {
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding-top: 15px; }
 
 .hello__container {
   display: -webkit-box;
@@ -262,9 +263,9 @@ h2, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  -webkit-box-flex: 0.8;
+  -ms-flex: 0.8;
+  flex: 0.8;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
