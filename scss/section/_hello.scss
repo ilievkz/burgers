@@ -1,0 +1,122 @@
+.hello {
+    background-image: url("../img/bg/hello_bg.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    padding-top: 15px;
+    // align-items: center;
+
+}
+
+.hello__container {
+    display: flex;
+    flex-direction: column;
+    outline: 0 solid blue;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    outline: 0 solid blue;
+}
+
+.header__logo {
+    margin-right: rem(200px);
+}
+
+.header__nav {
+    margin-right: rem(15px);        
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+
+    .header__item {
+        white-space: nowrap;
+        outline: 0 solid red;
+
+        &:after {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            @include circle(5px,#fff);
+            margin: 0 12px;
+        }
+
+        &:last-child:after {
+            display: none;
+        }
+    }
+
+    .header__item-link {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: rem(13px);
+        text-decoration: none;
+        line-height: 3.42;
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: 700;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.hello__content {
+    outline: 0 solid yellow;
+    display: flex;
+    flex: 0.8;
+    // flex-grow: 1;
+    // flex-wrap: nowrap;
+    align-items: center;
+    // justify-content: center;
+}
+
+.hello__content-img, .hello__content-text {
+    flex-basis: 50%;
+}
+
+.hello__content-img {
+    width: 451px;
+    height: 424px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    outline: 0 solid red;
+
+    .hello__content-pik {
+        position: absolute;
+        left: -9999px;
+    }
+}
+
+.hello__content-text {
+    outline: 0 solid yellow;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.title-h2--hello {
+    color: #f9b43b;
+    margin-bottom: 15px;
+}
+
+.hello__arrow-down {
+    position: absolute;
+    outline: 0 solid yellow;
+    width: 30px;
+    height: 16px;
+    bottom: 40px;
+    left: calc(50% - 15px);
+    background-image: url(/img/content/hello/arrow-scroll.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: pointer;
+}
