@@ -44,6 +44,24 @@
     }
 }
 
+.section-title {
+    font-size: rem(72px);
+    font-family: "Gagalin", sans-serif;
+    font-weight: 500;
+
+    &--color {
+        &--yellow {
+            color: $yellow;
+        }
+    }
+
+    &--position {
+        &--center {
+            text-align: center;
+        }
+    }
+}
+
 .title-h2 {
     font-size: rem(72px);
     font-family: "Gagalin", sans-serif;

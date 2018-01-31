@@ -111,6 +111,15 @@ h2, h6 {
   .btn-orange:hover {
     background-color: #ff3300; }
 
+.section-title {
+  font-size: 4.5rem;
+  font-family: "Gagalin", sans-serif;
+  font-weight: 500; }
+  .section-title--color--yellow {
+    color: #f8b43a; }
+  .section-title--position--center {
+    text-align: center; }
+
 .title-h2 {
   font-size: 4.5rem;
   font-family: "Gagalin", sans-serif;
@@ -458,3 +467,170 @@ h2, h6 {
   padding: 0 8px; }
   .review__detail:hover {
     background-color: #1d1f20; }
+
+.team {
+  background-image: url("../img/bg/team_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover; }
+
+.team__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background-color: rgba(47, 50, 52, 0.93);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.team__content {
+  width: 70%;
+  color: #fff; }
+
+.team__item {
+  margin-bottom: 2.375rem; }
+  .team__item.active .team__link {
+    color: #f8b43a; }
+    .team__item.active .team__link::before {
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
+  .team__item.active .team__trigger {
+    height: auto; }
+
+.team__link {
+  font-family: "Gagalin", sans-serif;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .team__link:before {
+    content: "";
+    display: block;
+    margin-right: 0.75rem;
+    width: 0;
+    height: 0;
+    border: 0.375rem solid transparent;
+    border-bottom-width: 0;
+    border-top-color: #f8b43a; }
+
+.team__trigger {
+  margin-left: 0.9375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0;
+  overflow: hidden; }
+  .team__trigger .team__pic {
+    margin-top: 1.25rem;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 6.875rem;
+    height: 6.875rem;
+    border-radius: 50%; }
+    .team__trigger .team__pic .team__pic-image {
+      position: absolute;
+      left: -9999px; }
+  .team__trigger .team__desc {
+    margin-top: 1.25rem;
+    width: 13.125rem;
+    margin-left: 0.9375rem; }
+    .team__trigger .team__desc .team__position {
+      font-size: 0.875rem;
+      font-weight: 900;
+      margin-bottom: 0.875rem; }
+    .team__trigger .team__desc .team__text {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      font-weight: 300; }
+
+.order {
+  background-image: url("../img/bg/order_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover; }
+
+.form__inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.form__left, .form__right {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.form__right {
+  margin-left: 1.25rem; }
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.25rem; }
+  .form__row .form__lable {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    margin-right: 20px; }
+    .form__row .form__lable:last-child {
+      margin-right: 0; }
+    .form__row .form__lable .form__title {
+      font-size: 0.875rem;
+      color: #fff;
+      font-weight: 300;
+      margin-bottom: 0.4375rem; }
+    .form__row .form__lable .form__input {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #2f3234;
+      width: 100%;
+      border-radius: 4px;
+      outline: none;
+      border: 2px solid transparent;
+      padding: 7px 0 7px 20px; }
+      .form__row .form__lable .form__input:focus {
+        border-color: #f8b43a; }
+    .form__row .form__lable .form__text {
+      height: 110px;
+      display: block;
+      width: 100%;
+      border-radius: 4px;
+      outline: none;
+      border: 2px solid transparent;
+      resize: none; }
+      .form__row .form__lable .form__text:focus {
+        border-color: #f8b43a; }
+    .form__row .form__lable.form__lable--radio {
+      -webkit-box-flex: 0;
+      -ms-flex: none;
+      flex: none; }
+      .form__row .form__lable.form__lable--radio .form__title, .form__row .form__lable.form__lable--radio .form__group {
+        display: inline-block;
+        vertical-align: middle; }
+      .form__row .form__lable.form__lable--radio .form__title {
+        margin-left: 0.6875rem;
+        margin-bottom: 0; }
+    .form__row .form__lable .form__radio {
+      position: absolute;
+      left: -9999px; }
+    .form__row .form__lable .form__radio-mask {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #fff; }

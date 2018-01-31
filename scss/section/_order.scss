@@ -1,0 +1,106 @@
+.order {
+    background-image: url('../img/bg/order_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.form__inner {
+    width: 100%;
+    display: flex;
+}
+
+.form__left, .form__right {
+    flex: 1;
+}
+
+.form__right {
+    margin-left: rem(20px);
+}
+
+// .form__left {
+    // outline: 1px solid red;
+    // display: flex;
+    // flex-direction: column;
+
+    .form__row {
+        // outline: 2px solid blue;
+        display: flex;
+        // flex-wrap: nowrap;
+        // width: 100%;
+        margin-bottom: rem(20px);
+
+        .form__lable {
+            // outline: 2px solid green;
+            flex: 1;
+            display: block;
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .form__title {
+                font-size: rem(14px);
+                color: #fff;
+                font-weight: 300;
+                margin-bottom: rem(7px);
+            }
+
+            .form__input {
+                font-size: rem(14px);
+                font-weight: 500;
+                color: #2f3234;
+                width: 100%;
+                border-radius: 4px;
+                outline: none;
+                border: 2px solid transparent;
+                padding: 7px 0 7px 20px;
+
+                &:focus {
+                    border-color: $yellow;
+                }
+            }
+
+            .form__text {
+                height: 110px;
+                display: block;
+                width: 100%;
+                border-radius: 4px;
+                outline: none;
+                border: 2px solid transparent;
+                resize: none;
+
+                &:focus {
+                    border-color: $yellow;
+                }
+            }
+
+            &.form__lable--radio {
+                flex: none;
+                .form__title, .form__group {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                .form__title {
+                    margin-left: rem(11px);
+                    margin-bottom: 0;
+                }
+            }
+
+            .form__radio {
+                position: absolute;
+                left: -9999px;
+            }
+
+            .form__radio-mask {
+                width: 16px;
+                height: 16px;
+                // margin-left: rem(11px);
+                border-radius: 50%;
+                background-color: #fff;
+            }
+        }
+    }
+// }

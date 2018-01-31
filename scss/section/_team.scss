@@ -1,0 +1,108 @@
+.team {
+    background-image: url('../img/bg/team_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.team__container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background-color: rgba($color: #2f3234, $alpha: 0.93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team__content {
+    width: 70%;
+    color: #fff;
+}
+
+.team__item {
+    margin-bottom: rem(38px);
+
+    &.active {
+        .team__link{
+            color: $yellow;
+
+            &::before {
+                transform: rotate(180deg);
+            }
+        }
+
+        .team__trigger {
+            height: auto;
+
+        }
+    }
+}
+
+.team__link {
+    // display: inline-block;
+    // vertical-align: middle;
+    font-family: "Gagalin", sans-serif;
+    font-size: rem(14px);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+    &:before {
+        content: "";
+        display: block;
+        // display: inline-block;
+        margin-right: rem(12px);
+        // vertical-align: middle;
+        width: 0;
+        height: 0;
+        border: rem(6px) solid transparent;
+        border-bottom-width: 0;
+        border-top-color: $yellow;
+    }
+}
+
+.team__trigger {
+    margin-left: rem(15px);
+    display: flex;
+    height: 0;
+    overflow: hidden;
+
+    .team__pic {
+        margin-top: rem(20px);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        width: rem(110px);
+        height: rem(110px);
+        border-radius: 50%;
+    
+        .team__pic-image {
+            position: absolute;
+            left: -9999px;
+        }
+    }
+
+    .team__desc {
+        margin-top: rem(20px);
+
+        width: rem(210px);
+        margin-left: rem(15px);
+
+        .team__position {
+            font-size: rem(14px);
+            font-weight: 900;
+            margin-bottom: rem(14px);
+        }
+
+        .team__text {
+            font-size: rem(14px);
+            line-height: rem(24px);
+            font-weight: 300;
+        }
+    }
+
+}
+
